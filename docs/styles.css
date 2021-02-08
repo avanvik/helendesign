@@ -20,6 +20,23 @@ body {
   padding: 3rem;
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  20% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 :root {
   --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -40,9 +57,13 @@ body {
   font-size: min(4rem, 9vw);
   margin-bottom: 0.4rem;
   text-shadow: var(--text-shadow);
+  animation-name: fadein;
+  animation-duration: 2s;
 }
 
 .subtitle {
   font-size: min(1.4rem, 5vw);
   text-shadow: var(--text-shadow);
+  animation-name: fadein;
+  animation-duration: 4s;
 }
